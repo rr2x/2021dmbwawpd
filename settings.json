@@ -1,0 +1,85 @@
+{
+  "workbench.startupEditor": "none",
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.activityBar.visible": true,
+  "workbench.editor.untitled.hint": "hidden",
+  "explorer.confirmDelete": false,
+  "git.openDiffOnClick": false,
+  "html-css-class-completion.enableEmmetSupport": true,
+  "typescript.tsserver.log": "verbose",
+  "editor.fontFamily": "Fira Code Light",
+  "editor.fontSize": 17,
+  "editor.fontWeight": "50",
+  "editor.fontLigatures": false,
+  "editor.cursorStyle": "line",
+  "editor.cursorWidth": 3,
+  "editor.cursorBlinking": "blink",
+  "editor.lineHeight": 20,
+  "editor.letterSpacing": -0.9,
+  "editor.glyphMargin": true,
+  "editor.matchBrackets": false,
+  "editor.minimap.enabled": false,
+  "editor.padding.top": 5,
+  "editor.tabSize": 2,
+  "editor.codeLens": false,
+  "editor.smoothScrolling": true,
+  "editor.formatOnSave": true,
+  "editor.semanticHighlighting.enabled": true,
+  "editor.suggestSelection": "first",
+  "breadcrumbs.enabled": false,
+  "editor.lineNumbers": "off",
+  "explorer.confirmDragAndDrop": false,
+  "editor.rulers": [
+    120
+  ],
+  "files.autoSave": "onFocusChange",
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "One Dark Pro",
+  "git.path": "C:\\Program Files\\Git\\bin",
+  "update.enableWindowsBackgroundUpdates": false,
+  "update.mode": "manual",
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
+  "eslint.validate": [
+    "javascript",
+    "javasriptreact"
+  ],
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "js": "javascriptreact",
+    "ejs": "html",
+    "hbs": "html",
+    "ts": "typescript",
+    "tsx": "typescriptreact",
+    "django-html": "html"
+  },
+  "files.associations": {
+    "*.js": "javascriptreact",
+    "*.jsx": "javascriptreact",
+    "*.comp.js": "javascriptreact",
+    "*.ts": "typescript",
+    "*.tsx": "typescriptreact",
+    "**/*.html": "html",
+    "**/templates/**/*.html": "django-html",
+    "**/templates/**/*": "django-txt",
+    "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "editor.linkedEditing": true,
+  "explorer.compactFolders": false,
+  "python.languageServer": "Pylance",
+}
