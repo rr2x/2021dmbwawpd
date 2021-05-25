@@ -1,0 +1,28 @@
+git config --global credential.useHttpPath true
+
+note:
+	do not use --global, the commit needs to be
+	dependent on the source
+
+
+git config user.name rr2x
+git config user.email 79620740+rr2x@users.noreply.github.com
+
+add new account on "Generic Credentials" found at Windows Credentials:
+Control Panel\All Control Panel Items\Credential Manager
+
+
+check python version:
+  >>> py --version
+
+check django version:
+  >>> py -m django --version
+
+create new django project:
+  >>> django-admin startproject "name of project"
+
+run server:
+  >>> py manage.py runserver
+
+create new app:
+  >>> py manage.py startapp "name of app"
