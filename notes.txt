@@ -26,3 +26,31 @@ run server:
 
 create new app:
   >>> py manage.py startapp "name of app"
+
+create table for the default installed django apps:
+  >>> py manage.py migrate
+
+after creating model from models.py,
+add to settings.py/INSTALLED_APPS from apps.py
+  example:
+      INSTALLED_APPS = [
+        'food.apps.FoodConfig',
+        ...]
+
+then tell django there are changes by using:
+  >>> py manage.py makemigrations food
+  >>> py manage.py sqlmigrate food 001_initial
+  >>> py manage.py migrate
+
+
+python shell to add data to database:
+  >>> py manage.py shell
+
+  [1] from food.models import Item
+  [2] Item.objects.all()
+  [3] a = Item(item_name"Pizza",item_desc="Cheesy Pizza",item_price=20)
+  [4] a.save()
+  [5] a.id
+  [6] a.pk
+
+  ~~~ better to use django admin panel
