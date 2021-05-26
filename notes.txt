@@ -39,7 +39,6 @@ add to settings.py/INSTALLED_APPS from apps.py
 
 then tell django there are changes by using:
   >>> py manage.py makemigrations food
-  >>> py manage.py sqlmigrate food 001_initial
   >>> py manage.py migrate
 
 
