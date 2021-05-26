@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import Profile
 
-# Register your models here.
+# need to register model extension to show on admin page
+admin.site.register(Profile)

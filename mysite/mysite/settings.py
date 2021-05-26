@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -129,3 +130,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # change login redirect (when we use the built-in login form)
 LOGIN_REDIRECT_URL = 'food:index'
+
+# manually setup our login url target when using @login_required decorator
+LOGIN_URL = 'login'
+
+# path where images will be stored as the root,
+# the folder was defined at users/models.py ... upload_to=...
+MEDIA_ROOT = os.path.join(BASE_DIR, 'pictures')
+MEDIA_URL = '/pictures/'
