@@ -61,3 +61,7 @@ create superuser:
 
 register model at admin.py if you want that to be visible on admin panel
 (need to create superuser first before you can access admin panel)
+
+
+create auth:
+  >>> django-admin startapp users
