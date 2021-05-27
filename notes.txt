@@ -72,3 +72,11 @@ Django Signals:
 
 
 REST API using Django REST Framework
+
+  >>> pip install djangorestframework
+  >>> django-admin startproject "project name"
+  >>> django-admin startapp "app name"
+  >>> py manage.py createsuperuser
+
+
+serialization of models: allow querysets to be used in python types
