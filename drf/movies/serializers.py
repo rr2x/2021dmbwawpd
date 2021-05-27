@@ -3,7 +3,9 @@ from .models import Moviedata
 
 
 class MovieSerializer(serializers.ModelSerializer):
+    image = serializers.ImageField(max_length=None, use_url=True)
+
     class Meta:
         model = Moviedata
+        fields = ['id', 'name', 'duration', 'rating', 'typ', 'image']
         #fields = Moviedata.getAttributeList()
-        fields = ['id', 'name', 'duration', 'rating']
