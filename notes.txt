@@ -65,3 +65,10 @@ register model at admin.py if you want that to be visible on admin panel
 
 create auth:
   >>> django-admin startapp users
+
+
+Django Signals:
+  automated processes if a specific change is detected
+
+
+REST API using Django REST Framework
