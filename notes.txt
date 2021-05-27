@@ -80,3 +80,10 @@ REST API using Django REST Framework
 
 
 serialization of models: allow querysets to be used in python types
+
+
+virtual environment:
+  - isolated environment to create projects
+  - can install specific library versions only within that environment
+
+  https://docs.python.org/3/library/venv.html
