@@ -1,7 +1,7 @@
 {% extends 'food/_base.html' %} {% block body %}
 
 
-<div class="container">
+{% comment %} <div class="container">
   <div class="row">
     <div class="col-md-6">
       <img height="300px" src="{{ item.item_image }}" class="card container-fluid px-0">
@@ -13,7 +13,20 @@
       <a href="{% url 'food:delete_item' item.id %}">Delete</a>
     </div>
   </div>
-</div>
+</div> {% endcomment %}
 
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <img height="300px" src="{{ object.item_image }}" class="card container-fluid px-0">
+    </div>
+    <div class="col-md-6">
+      <h1>{{ object.item_name }}</h1>
+      <h2>{{ object.item_desc }}</h2>
+      <h3>${{ object.item_price }}</h2>
+      <a href="{% url 'food:delete_item' object.id %}">Delete</a>
+    </div>
+  </div>
+</div>
 
 {% endblock %}
