@@ -2,14 +2,21 @@ from django.shortcuts import redirect, render
 from django.http import HttpResponse
 from .forms import ItemForm
 from .models import Item
+from django.views.generic.list import ListView
 
 
-def index(request):
+def index(request):  # function based view
     item_list = Item.objects.all()
     context = {
         'item_list': item_list,
     }
     return render(request, 'food/index.html', context)
+
+
+class IndexClassView(ListView):  # class based view
+    model = Item
+    template_name = 'food/index.html'
+    context_object_name = 'item_list'
 
 
 def anotherlink(request):

@@ -137,4 +137,5 @@ LOGIN_URL = 'login'
 # path where images will be stored as the root,
 # the folder was defined at users/models.py ... upload_to=...
 MEDIA_ROOT = os.path.join(BASE_DIR, 'pictures')
+
 MEDIA_URL = '/pictures/'

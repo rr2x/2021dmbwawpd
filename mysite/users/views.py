@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .forms import RegisterForm
+from django.conf import settings
 
 
 def register(request):
@@ -23,4 +24,7 @@ def register(request):
 
 @login_required
 def profilepage(request):
-    return render(request, 'users/profile.html')
+    context = {
+        'MEDIA_URL': settings.MEDIA_URL
+    }
+    return render(request, 'users/profile.html', context)
